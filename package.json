@@ -1,0 +1,26 @@
+{
+  "name": "litentry-sdk",
+  "version": "1.0.0",
+  "description": "JS SDK for Building Dapps on Litentry and Substrate",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litentry/litentry-sdk.git"
+  },
+  "keywords": [
+    "litentry"
+  ],
+  "author": "Hanwen Cheng",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/litentry/litentry-sdk/issues"
+  },
+  "homepage": "https://github.com/litentry/litentry-sdk#readme",
+  "dependencies": {
+    "typescript": "^4.0.2"
+  }
+}

@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "JS SDK for Building Dapps on Litentry and Substrate",
   "main": "index.js",
+  "files": [
+    "lib/**/*",
+    "lib/*"
+  ],
   "scripts": {
-    "build": "yarn tsc",
+    "build": "tsc",
+    "lint:fix": "prettier --write \"src/*.ts\" \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +27,13 @@
   },
   "homepage": "https://github.com/litentry/litentry-sdk#readme",
   "dependencies": {
+    "@polkadot/api": "^1.30.1",
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.0.2"
   }
 }

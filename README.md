@@ -61,7 +61,7 @@ ipfsApi.registerIdentity(identity: string): void
 
 functions to construct query http request  from GraphQL:
 
-```
+```typescript
 query.getData(identity: string): string
 
 query.setData(identity: string, data: string): string
